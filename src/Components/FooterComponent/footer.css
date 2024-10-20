@@ -1,0 +1,126 @@
+/* Footer Section One Styling */
+.footer-inner-container-one {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-inner-container-one div {
+  max-width: 250px;
+}
+
+.footer-inner-container-one h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-inner-container-one ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-inner-container-one li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.footer-inner-container-one input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.footer-inner-container-one button {
+  padding: 10px 15px;
+  background-color: #165315;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer Section Two Styling */
+.footer-inner-container-two {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.footer-inner-container-two h1 {
+  color: #165315;
+  margin-bottom: 10px;
+}
+
+.footer-inner-container-two p {
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-inner-container-two hr {
+  margin: 20px 0;
+}
+
+.footer-inner-container-two div h1 {
+  font-size: 18px;
+}
+
+.footer-inner-container-two div svg {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.footer-inner-container-two svg:hover {
+  color: #165315;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-inner-container-one {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .footer-inner-container-one div {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
+
+/* Small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-inner-container-one {
+      padding: 15px;
+  }
+
+  .footer-inner-container-one h4 {
+      font-size: 16px;
+  }
+
+  .footer-inner-container-one li {
+      font-size: 12px;
+  }
+
+  .footer-inner-container-one input, .footer-inner-container-one button {
+      width: 100%;
+  }
+
+  .footer-inner-container-two {
+      padding: 20px;
+  }
+
+  .footer-inner-container-two h1 {
+      font-size: 16px;
+  }
+
+  .footer-inner-container-two p {
+      font-size: 12px;
+  }
+}

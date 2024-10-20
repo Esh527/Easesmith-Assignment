@@ -1,0 +1,118 @@
+/* General header styling */
+.header-container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation styles */
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hover effect for navigation links */
+nav ul li:hover a {
+  color: #165315;
+}
+
+/* Dropdown menu styles */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style-type: none;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+/* Icon container styling */
+.icon-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  cursor: pointer;
+}
+
+.icon-item span {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  nav ul li {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .icon-container {
+      justify-content: flex-start;
+  }
+}
+
+/* Small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .header-container {
+      padding: 15px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul li {
+      margin-bottom: 10px;
+      margin-left: 0;
+  }
+
+  .icon-item span {
+      font-size: 10px;
+  }
+}

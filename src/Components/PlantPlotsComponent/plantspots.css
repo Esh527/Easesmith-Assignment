@@ -1,0 +1,52 @@
+.buttons {
+    display: flex;
+    margin: 1px;
+    padding: 10px;
+}
+
+.button-one {
+    height: 40px;
+    width: 70px;
+    background-color: #165315;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+}
+
+.button-two {
+    height: 40px;
+    width: 70px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens and tablets (768px and below) */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column; /* Stack the buttons vertically */
+        align-items: center;
+    }
+
+    .button-one, .button-two {
+        width: 100px; /* Increase the width slightly for better visibility on medium screens */
+        height: 50px;
+        font-size: 14px; /* Adjust the font size */
+    }
+}
+
+/* Small screens and mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .button-one, .button-two {
+        width: 80px; /* Slightly narrower buttons for smaller screens */
+        height: 40px;
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 3px;
+        margin: 3px;
+    }
+}
